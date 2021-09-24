@@ -25,13 +25,17 @@
 
         <!-- Compose Message form-->
         <div class="container pt-8">
-            <textarea name="content"></textarea>
+            <div id="editor"></div>
         </div>
     </div>
 
-    <script src="ckeditor/ckeditor.js"></script>
+    <script src="ckeditor5-build-classic/ckeditor.js"></script>
     <script>
-        CKEDITOR.replace('content');
+        ClassicEditor 
+        .create(document.querySelector('#editor'))
+        .catch(error => {
+            console.log(error)
+        } )
     </script>
 </body>
 </html>
