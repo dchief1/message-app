@@ -1,0 +1,23 @@
+{
+  "name": "message-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/style.css -o public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dchief1/message-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dchief1/message-app/issues"
+  },
+  "homepage": "https://github.com/dchief1/message-app#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.15"
+  }
+}
