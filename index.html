@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/style.css" >
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/style.css"> 
+    <link rel="stylesheet" href="./index.css"> 
     <title>Message-app</title>
 </head>
 <body>
@@ -14,11 +15,17 @@
         <div class="pt-8">
             <h2 class="pb-2 text-2xl">Login Information</h2>
             <input type="text" placeholder="Your Login Information" class="border h-5 px-3 py-5 w-full rounded-lg ">
-                
+               
             <input type="text" placeholder="Preview Text" class="border h-5 px-3 py-5 mt-2 w-full rounded-lg">
+            
             <h2 class="text-right pt-2 text-gray-400">
                 Optional. It's a short summary of the email content
             </h2>
+
+            <div class="drop-zone">
+                <span class="drop-zone__prompt">Drop file here or click to upload</span>
+                <input type="file" name="myFile" class="drop-zone__input">
+              </div>
         </div>
 
         <!-- Compose Message form-->
@@ -34,20 +41,8 @@
              cloudServices_tokenUrl: 'https://example.com/cs-token-endpoint',
              cloudServices_uploadUrl: 'https://your-organization-id.cke-cs.com/easyimage/upload/'
         } );
-        
-        
-    //     ClassicEditor
-	// .create( document.querySelector( '#editor' ), {
-	// 	ckfinder: {
-	// 		uploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json',
-	// 	},
-	// 	toolbar: [ 'heading', '|', 'bold', 'italic', 'numberedList', 'bulletedList', 'link', '|', 'blockQuote', 'imageUpload', 'ckfinder',   '|',  'undo', 'redo' ]
-	// } )
-	// .catch( error => {
-	// 	console.error( error );
-	// } );
-
-	    
     </script>
+
+    <script src="./index.js"></script>
 </body>
 </html>

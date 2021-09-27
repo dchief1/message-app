@@ -4,20 +4,3 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-
-
-.ql-snow .ql-picker {
-    @apply text-black-500 inline-block float-left text-sm font-medium relative align-middle h-6
-}
-
-.ql-snow .ql-picker.ql-font {
-    @apply w-28
-}
-
-.ql-snow .ql-font.ql-picker {
-    @apply w-32
-}
-
-.ql-snow .ql-picker-label {
-    @apply cursor-pointer inline-block relative w-full h-full border-white-200 pr-0.5 pl-2
-}
