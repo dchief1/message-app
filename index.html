@@ -22,11 +22,12 @@
                 Optional...
             </h2>
 
-            <div class="drop-zone">
-                <span class="drop-zone__prompt">Drop file here or click to upload</span>
-                <input type="file" name="myFile" class="drop-zone__input">
-              </div>
         </div>
+
+        <div class="drop-zone">
+            <span class="drop-zone__prompt">Drop file here or click to upload</span>
+            <input type="file" name="myFile" class="drop-zone__input">
+          </div>
 
         <!-- Compose Message form-->
         <div class="container pt-8">
@@ -38,6 +39,8 @@
         CKEDITOR.replace( 'editor', {
              extraPlugins: 'easyimage',
              removePlugins: 'image',
+             removePlugins: 'table',
+             removePlugins: 'about',
              cloudServices_tokenUrl: 'https://example.com/cs-token-endpoint',
              cloudServices_uploadUrl: 'https://your-organization-id.cke-cs.com/easyimage/upload/'
         } );
